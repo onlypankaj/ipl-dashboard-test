@@ -20,11 +20,12 @@ Step1 ( First Commit ): Setup Spring boot Project : Check README.md
 		Spring JPA
 		
 Step2: Initialize Database to Read csv file : Check README.md
-a. Add match-data.csv to resources
-b. Go to Link for sample Spring batch 
-	Google search: spring batch load csv file
-	Go to link: https://spring.io/guides/gs/batch-processing/
-c. Spring Batch: 
+
+	a. Add match-data.csv to resources
+	b. Go to Link for sample Spring batch 
+		Google search: spring batch load csv file
+		Go to link: https://spring.io/guides/gs/batch-processing/
+	c. Spring Batch: 
 		Create a Business Class: 
 			data:MatchInput to receive csv file as is.
 			model:Match to transfer MatchInput to DB and map to DB
