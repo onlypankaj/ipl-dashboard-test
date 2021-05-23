@@ -54,7 +54,16 @@ Step2: Initialize Database to Read csv file : Check README.md
 				Add JobCompletionNotificationListener
 					afterJob
 					
-					
+Step3: Prepare additional aggregated data: Team
+		
+		a. Add model:team with summary of team matches won and played
+		b. Upload data to team via JobCompletionNotificationListener:afterJob
+			Create a blank HashMap of String(TeamName) and Team
+			Union is not supported by JPA so call query twise and update the list.
+		c. Display team data after upload
+		
+			
+			
 				
 					
 					
