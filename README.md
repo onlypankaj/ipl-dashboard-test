@@ -1,5 +1,5 @@
 # ipl-dashboard-test
-Step1 (Commit): Setup Spring boot Project : Check README.md
+Step1 ( First Commit ): Setup Spring boot Project : Check README.md
 	
 	Spring initizlier:
 		Java: 9
@@ -18,3 +18,24 @@ Step1 (Commit): Setup Spring boot Project : Check README.md
 		HyperSQL Database
 		Spring Batch
 		Spring JPA
+		
+Step2: Initialize Database to Read csv file : Check README.md
+a. Add match-data.csv to resources
+b. Go to Link for sample Spring batch 
+	Google search: spring batch load csv file
+	Go to link: https://spring.io/guides/gs/batch-processing/
+c. Spring Batch: 
+		Create a Business Class: 
+			data:MatchInput to receive csv file as is.
+			model:Match to transfer MatchInput to DB and map to DB
+		Create an Intermediate Processor:
+			data: MatchDataProcessor implements ItemProcessor, input MatchInput and write to Match
+					MethodImplement:process input MatchInput and output to Match
+				: Add logic to store team1 as first batted team and team2 as vice versa based on toss decision
+				
+				
+					
+					
+					
+	
+	
