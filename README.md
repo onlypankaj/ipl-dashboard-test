@@ -51,6 +51,9 @@ Step2: Initialize Database to Read csv file : Check README.md
 					
 					Make Match as Entity
 					
+				Add JobCompletionNotificationListener
+					afterJob
+					
 					
 				
 					
