@@ -19,6 +19,8 @@ Step1 ( First Commit ): Setup Spring boot Project : Check README.md
 		Spring Batch
 		Spring JPA
 		
+	Run the code
+		
 Step2: Initialize Database to Read csv file : Check README.md
 
 	a. Add match-data.csv to resources
@@ -32,8 +34,22 @@ Step2: Initialize Database to Read csv file : Check README.md
 		Create an Intermediate Processor:
 			data: MatchDataProcessor implements ItemProcessor, input MatchInput and write to Match
 					MethodImplement:process input MatchInput and output to Match
-				: Add logic to store team1 as first batted team and team2 as vice versa based on toss decision
-				
+			Add logic to store team1 as first batted team and team2 as vice versa based on toss decision
+			
+			Run the code
+		Put Together a Batch Job:
+			date: BatchConfig with @Configuration @EnableBatchProcessing
+				Factory: JobBuilderFactory, StepBuilderFactory
+				Create 3 methods:
+					reader()
+					processor()
+					writer(DataSource dataSource)
+					
+				Create 2 process
+					Job
+					Step
+					
+					
 				
 					
 					
